@@ -41,7 +41,6 @@ header nav a:hover {
     background-color: rgba(250, 249, 249, 0.377);
 }
 
-
 h1 {
     font-family: 'Permanent Marker', cursive;
 }
@@ -76,6 +75,7 @@ h2::before {
 p {
     font-family: 'Inconsolata', monospace;
 }
+
 .introduction {
     font-size: 30px;
 }
@@ -91,6 +91,7 @@ p {
         font-size: 12px;
     }
 }
+
 .img-top {
     width: 35%;
 }
@@ -100,7 +101,6 @@ p {
     background-color: rgb(49, 49, 49);
     border: 1px solid black;
 }
-
 
 .top5 section {
     width: 50%;
@@ -141,7 +141,6 @@ p {
     }
 }
 
-
 hr {
     border: 1px solid #c4d962;
 }
@@ -158,8 +157,7 @@ hr {
 
 .main-section-a:hover {
     border: black 2px solid;
-    color: white;
-    
+    color: white;  
 }
 
 footer {
@@ -194,6 +192,7 @@ footer nav {
         width: 30%;
     }
 }
+
 footer a {
     display: block;
     width: 10%;
@@ -224,6 +223,7 @@ input[type="text"] , input[type="email"] {
   border: 1px solid white;
   color: white;
 }
+
 .contact {
     width: 40%;
     margin: 2% auto;

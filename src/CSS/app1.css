@@ -3,7 +3,7 @@
     src: url('../font/WaltDisneyScript.ttf');   
     font-weight: normal;
     font-style: normal;
-    }
+}
 
 body {
     max-width: 1400px;
@@ -21,6 +21,7 @@ a {
 header , footer {
     background-color: rgb(49, 49, 49);
 }
+
 h1 {
     font-family: 'Permanent Marker', cursive;
 }
@@ -65,6 +66,7 @@ header h1 {
     padding: 2%;
     color: #c4d962;
 }
+
 header img {
     width: 8%;
 }
@@ -96,7 +98,6 @@ main h1 {
     font-size: 40px;
     font-family: 'Great Vibes', cursive;
 }
-
 
 .container {
     display: flex;
@@ -146,17 +147,13 @@ main h1 {
     overflow: hidden;
     scroll-behavior: smooth;
     margin: auto;
-    
 }
 
 #section1 , #section2 , #section3 {
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(7,auto);
-    
+    grid-template-columns: repeat(7,auto); 
 }
-
-
 
 .wrapper a {
     display: inline-block;
@@ -164,12 +161,9 @@ main h1 {
     text-decoration: none;
     font-size: 5em;
     width:10%;
-    padding: 2%;
-    
+    padding: 2%; 
     text-align: center;
 }
-
-
 
 .item {
     margin: 0 2PX;
@@ -182,8 +176,7 @@ main h1 {
 }
 
 @media screen and (max-width:900px) {
-    #section1 , #section2 , #section3  {
-        
+    #section1 , #section2 , #section3  { 
         grid-template-columns: repeat(1,auto);
         margin: 2px 3px;
     }
@@ -339,6 +332,7 @@ footer nav {
         width: 30%;
     }
 }
+
 footer a {
     display: block;
     width: 10%;
