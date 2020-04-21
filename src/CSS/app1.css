@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'disney';
+    src: url('../font/WaltDisneyScript.ttf');   
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+    max-width: 1400px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #0171b3;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header , footer {
+    background-color: rgb(49, 49, 49);
+}
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h2 {
+    color: #a9f9fb;
+    font-family: 'disney';
+    font-size: 35px;
+}
+
+.h2-deco::after , .h2-deco::before {
+    content: " ";
+    display: inline-block;
+    width: 24%;
+    vertical-align: middle;
+    height: 2px;
+    background-color: #07164f;
+}
+
+@media screen and (max-width:500px) {
+    h2 {
+        font-size: 25px;
+    }
+    .h2-deco::after , .h2-deco::before {
+        width: 15%;
+       
+    }
+}
+
+h4  {
+    font-family: 'Lobster', cursive;
+    color: #c4d962;
+}
+
+hr {
+    width: 87%;
+    border: #07164f 1px solid;
+}
+
+header h1 {
+    margin-top: 0;
+    padding: 2%;
+    color: #c4d962;
+}
+header img {
+    width: 8%;
+}
+
+header nav {
+    margin-top: 4%;
+    padding: 1%;
+    background-color: black;
+}
+
+header nav a {
+    padding: 1%; 
+}
+
+header nav a:hover {
+    color: #c4d962;
+    border-bottom: white 4px solid;
+    background-color: rgba(250, 249, 249, 0.377);
+}
+
+/**** MAIN ****/
+
+main h1 {
+    font-size: 60px;
+    font-family: 'disney';
+}
+
+.sloggan {
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+}
+
+
+.container {
+    display: flex;
+}
+
+.container img {
+    width: 40%;
+    margin: 1%;
+}
+
+.container p{
+    text-align: left;
+    padding: 1%;
+}
+
+.container a {
+    display: inline-block;
+    width: 30%;
+    margin-top: 3%;
+    padding: 3%;
+    background-color: #07164f;
+    border-radius: 15px;
+}
+
+.container a:hover {
+    background-color: #07154f8c;
+    
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        display: block;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container a {
+       width: 40%;
+       
+    }
+}
+
+/***** SLIDER ******/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: auto;
+    
+}
+
+#section1 , #section2 , #section3 {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    
+}
+
+
+
+.wrapper a {
+    display: inline-block;
+    color: #07164f;
+    text-decoration: none;
+    font-size: 5em;
+    width:10%;
+    padding: 2%;
+    
+    text-align: center;
+}
+
+
+
+.item {
+    margin: 0 2PX;
+    transition: 250ms all;
+}
+
+.item:hover {
+   margin: 0 20px;
+   transform: scale(1.2);
+}
+
+@media screen and (max-width:900px) {
+    #section1 , #section2 , #section3  {
+        
+        grid-template-columns: repeat(1,auto);
+        margin: 2px 3px;
+    }
+    
+    .item {
+        margin: AUTO;
+    }
+
+    .wrapper a {
+        margin: auto;
+        width:5%;
+        padding: 1%;
+    }
+
+    .item:hover {
+        margin: 0 10px;
+    }
+
+}
+/*********/
+
+li {
+    list-style: url(../images/disney/tete.png);
+    margin: 0;
+    padding: 0;
+}
+
+.section2 {
+    display: flex;
+    margin-top: 10px;
+    text-align: left;
+    justify-content: space-around;
+    background: linear-gradient(90deg, rgba(172,251,253,1) 0%, rgba(7,23,82,1) 62%);
+}
+
+.section2 section {
+    width: 50%;
+    margin: 2%;
+    padding: 1%;
+    background-color: #07164f;
+    border-radius: 20px;
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+    .section2 {
+        display: block;
+    }
+    .section2 section {
+        width: 90%;
+        margin: 1% auto;
+    }
+}
+
+
+/**** SCREEN ****/
+
+.screen {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.screen img {
+    width: 30%;
+    margin: 2%;
+    padding: 0.5%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.screen img:hover {
+    animation : hinge 4s infinite;
+}
+
+/*****ANIMATION ****/
+@keyframes hinge {
+    0% {
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+    }
+  
+    20%,
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 80deg);
+      transform: rotate3d(0, 0, 1, 80deg);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+    }
+  
+    40%,
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, 60deg);
+      transform: rotate3d(0, 0, 1, 60deg);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 700px, 0);
+      transform: translate3d(0, 700px, 0);
+      opacity: 0;
+    }
+  }
+  
+  .hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-name: hinge;
+    animation-name: hinge;
+  }
+  
+    
+
+    
+footer {
+    display: flex;
+    color: #c4d962;
+}
+
+footer section {
+    width: 40%;
+}
+
+footer nav {
+    text-align: left;
+}
+
+@media screen and (max-width:799px) {
+    footer {
+        display: block;
+        padding: 1%;
+    }
+    footer section {
+        width: 100%;
+        margin: auto;
+    }
+    footer nav {
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width:800px) and (max-width:1000px) {
+    footer section {
+        width: 30%;
+    }
+}
+footer a {
+    display: block;
+    width: 10%;
+    margin: auto;
+
+}
+
+footer a:hover {
+    color: #c4d962;
+}
+
+input[type="text"] , input[type="email"] {
+    height: 20px;
+}
+
+.newletter input[type="submit"] {
+    width: 25%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.newletter input[type="submit"] , .contact input[type="submit"] {
+    background-color: #c4d962;
+    border: solid 1px #c4d962;
+}
+
+.newletter input[type="submit"]:hover , .contact input[type="submit"]:hover {
+  border: 1px solid white;
+  color: white;
+}
+.contact {
+    width: 40%;
+    margin: 2% auto;
+}
+@media screen and (max-width:799px) {
+    .contact {
+        margin: 1% auto;
+    }
+    .contact input {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.contact input[type="submit"] {
+    width: 80%;
+    margin: 1% auto;
+    padding: 2%;
+}
