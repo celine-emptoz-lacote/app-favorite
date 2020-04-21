@@ -35,13 +35,13 @@ h2 {
 .h2-deco::after , .h2-deco::before {
     content: " ";
     display: inline-block;
-    width: 24%;
+    width: 23%;
     vertical-align: middle;
     height: 2px;
     background-color: #07164f;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:890px) {
     h2 {
         font-size: 25px;
     }
