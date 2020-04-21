@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/CSS/app-favorites.css">
+
+    <title>Mes applications favorites</title>
+</head>
+<body>
+    <header>
+        <h1>Mes applications favorites</h1>
+        <img src="src/images/logo.png" alt="Logo">
+        <nav>
+            <a href="app1.html">Disney+</a>
+            <a href="app2.html">Netflix</a>
+            <a href="app3.html">Facebook</a>
+            <a href="app4.html">Whatsapp</a>
+            <a href="app5.html">Amazon</a>
+        </nav>
+    </header>
+    <main>
+        <p class="introduction">Vous ne savez pas quoi télécharger comme applications sur votre téléphone ?</p>
+        <p class="introduction">Restez-ici, et découvrez mon Top  5 de mes applications ! </p>
+        <section>
+            <h2>Top 5 de mes applications</h2>
+            
+            <div class="top5">
+                <section>
+                    <div class="div-top">
+                        <img class="img-top" src="src/images/1.png" alt="Top 1">
+                        <h3>Disney+</h3>
+                        <img src="src/images/disneyplus-logo.png" alt="Logo de Disney+">
+                        <hr>
+                        <p>Disney+ est une plateforme de vidéo à la demande détenue et exploitée par la Walt Disney Company au travers de sa division Walt Disney Direct-to-Consumer and International avec les quatre filiales Pixar Animation Studios, Marvel Studios, Lucasfilm et National Geographic.</p>
+                    </div>
+                    <div>
+                        <a class="main-section-a" href="app1.html">Voir l'application</a>
+                    </div>
+                </section>
+                <section>
+                    <div class="div-top">
+                        <img class="img-top" src="src/images/2.png" alt="Top 2">
+                        <h3>Netflix</h3>
+                        <img src="src/images/netflix.png" alt="Logo de Netflix">
+                        <hr>
+                        <p>Netflix est arrivé en France le 15 septembre 2014. Le services américain de vidéos à la demande, Netflix, fait plus que jamais le buzz. </p>
+                    </div>
+                    <div>
+                        <a class="main-section-a" href="app2.html">Voir l'application</a>
+                    </div>
+                </section>
+                <section>
+                    <div class="div-top">
+                        <img class="img-top" src="src/images/3.png" alt="Top 3">
+                        <h3>Facebook</h3>
+                        <img src="src/images/facebook.png" alt="Logo de Facebook">
+                        <hr>
+                        <p>Facebook est un réseau social en ligne qui permet à ses utilisateurs de publier des images, des photos, des vidéos, des fichiers et documents, d'échanger des messages, joindre et créer des groupes et d'utiliser une variété d'applications.</p>
+                    </div>
+                    <div>
+                        <a class="main-section-a" href="app3.html">Voir l'application</a>
+                    </div>
+                </section>
+                <section>
+                    <div class="div-top">
+                        <img class="img-top" src="src/images/4.png" alt="Top 4">
+                        <h3>Whatsapp</h3>
+                    <img src="src/images/whatsapp.png" alt="Logo de Whatsapp">
+                    <hr>
+                    <p>WhatsApp (ou WhatsApp Messenger) est une application mobile multiplateforme qui fournit un système de messagerie instantanée chiffrée de bout en bout aussi bien par Internet que par les réseaux mobiles.</p>
+                    </div>
+                    <div>
+                        <a class="main-section-a" href="app4.html">Voir l'application</a>
+                    </div>
+                </section>
+                <section>
+                    <div class="div-top">
+                        <img class="img-top" src="src/images/5.png" alt="Top 5">
+                        <h3>Amazon</h3>
+                    <img src="src/images/amazon.png" alt="Logo d'amazon">
+                    <hr>
+                    <p>Vous permet de naviguer sur Amazon depuis votre smartphone ou votre tablette. Vous pouvez ainsi rechercher des articles, comparer les prix, effectuer vos achats et gérer les informations de votre compte Amazon.fr.</p>
+                    </div>
+                    <div>
+                        <a class="main-section-a" href="app5.html">Voir l'application</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h4>NewsLetter</h4>
+            <form class="newletter" action="app-favorites.html" method="POST">
+                <label for="mail">Votre e-mail</label>
+                <input type="email" id="mail" name="mail" placeholder="entrer votre mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <input type="submit">
+            </form>
+            
+        </section>
+        <section>
+            <h4>Mes applications</h4>
+            <nav>
+                <a href="app1.html">Disney+</a>
+                <a href="app2.html">Netflix</a>
+                <a href="app3.html">Facebook</a>
+                <a href="app4.html">Whatsapp</a>
+                <a href="app5.html">Amazon</a>
+            </nav>
+        </section>
+        <section>
+            <h4>Nous contacter</h4>
+            <form action="app-favorites.html" method="POST" class="contact">
+                
+                <label for="nom">Votre Nom et Prénom</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="mailMessage">Votre mail</label>
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="mailMessage" id="mailMessage" required>
+
+                <label for="message">Votre message :</label>
+                <textarea name="message" id="message" cols="30" rows="4"></textarea>
+
+                <input type="submit">
+            </form>
+        </section>
+
+    </footer>
+    
+</body>
+</html>
